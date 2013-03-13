@@ -1,0 +1,19 @@
+{
+  "name": "Browser Market Share",
+  "author": "Nate Lubeck",
+  "version": "0.5",
+  "manifest_version": 2,
+  "omnibox": { "keyword" : "browse" },
+  "icons": {
+    "16": "icon-16.png",
+    "128": "128x128.png"
+  },
+  "homepage_url":"http://www.natelubeck.com",
+
+  "permissions":["http://api.chartbeat.com/","tabs"],
+  "background": {
+    "persistent": true,
+    "scripts": ["jquery.js","background.js"]
+  },
+   "content_security_policy": "script-src 'self' https://api.chartbeat.com; object-src 'self' https://api.chartbeat.com; connect-src 'self' https://api.chartbeat.com"
+}
